@@ -1,0 +1,12 @@
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bbS-8I-4ix"; */
+"bbS-8I-4ix.normalTitle" = "Tombol";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "TaH-hS-LXa"; */
+"TaH-hS-LXa.normalTitle" = "Batal";
+
+/* Class = "UIButton"; normalTitle = "Another Button"; ObjectID = "xzD-en-aq6"; */
+"xzD-en-aq6.normalTitle" = "Tombol Lain";
+
+/* Class = "UITextField"; text = "Hello World"; ObjectID = "Zwl-mF-SkG"; */
+"Zwl-mF-SkG.text" = "Halo Dunia";
+

@@ -1,0 +1,6 @@
+
+/* Comment for 'Hello World' string */
+"Hello World" = "Hello World";
+
+/* Comment for Bill Gates */
+"%@ is the successful businessman number %d." = "%@ is the successful businessman number %d.";

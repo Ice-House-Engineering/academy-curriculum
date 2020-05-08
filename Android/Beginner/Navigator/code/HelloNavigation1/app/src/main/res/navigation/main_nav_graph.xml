@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_nav_graph.xml"
+            app:startDestination="@id/fragment_a">
+    <fragment
+            android:id="@+id/fragment_a"
+            android:name="com.example.hellonavigation1.FragmentA"
+            android:label="Fragment A">
+        <action
+                android:id="@+id/goToFragmentB"
+                app:destination="@id/fragment_b"/>
+    </fragment>
+    <fragment
+            android:id="@+id/fragment_b"
+            android:name="com.example.hellonavigation1.FragmentB"
+            android:label="Fragment B">
+        <argument
+                android:name="parameterFromFragmentA"
+                app:argType="string"/>
+        <action
+                android:id="@+id/goToFragmentC"
+                app:destination="@id/fragment_c"/>
+    </fragment>
+    <fragment
+            android:id="@+id/fragment_c"
+            android:name="com.example.hellonavigation1.FragmentC"
+            android:label="Fragment C">
+        <argument
+                android:name="parameterFromFragmentB"
+                app:argType="integer"/>
+        <action
+                android:id="@+id/goBackToFragmentA"
+                app:destination="@id/fragment_a"
+                app:popUpTo="@id/fragment_a"
+                app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

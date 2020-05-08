@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/newAction"
+            android:icon="@drawable/ic_fiber_new_white"
+            app:showAsAction="always"
+            android:title="@string/new_action"/>
+    <item
+            android:id="@+id/downloadAction"
+            android:icon="@drawable/ic_call_received_white"
+            app:showAsAction="ifRoom"
+            android:title="@string/download_action"/>
+    <item
+            android:id="@+id/loginAction"
+            android:icon="@drawable/ic_transfer_within_a_station_white"
+            app:showAsAction="never"
+            android:title="@string/login_action"/>
+</menu>

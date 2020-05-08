@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HelloViewPager1</string>
+    <string name="text_view_string">Text View %1$d</string>
+</resources>

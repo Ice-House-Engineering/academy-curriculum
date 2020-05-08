@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HelloNotification2</string>
+    <string name="notification_title">Hello Title</string>
+    <string name="notification_text">Hello Text</string>
+    <string name="channel_name">Hello Channel</string>
+    <string name="channel_description">Hello Description</string>
+    <string name="notification_button">Send Email</string>
+    <string name="reply_label">Reply This Notification</string>
+</resources>

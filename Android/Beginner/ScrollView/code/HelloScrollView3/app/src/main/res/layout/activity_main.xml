@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/scrollView">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView android:layout_width="300dp"
+                                                   android:layout_marginTop="64dp"
+                                                   android:background="@color/colorPrimary"
+                                                   android:layout_height="300dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="256dp"
+                            android:layout_height="256dp" tools:srcCompat="@tools:sample/avatars[2]"
+                            android:id="@+id/imageViewNested"
+                            android:src="@drawable/anna"
+                            android:layout_marginTop="64dp"
+                    />
+                    <ImageView
+                            android:layout_width="256dp"
+                            android:layout_height="256dp" tools:srcCompat="@tools:sample/avatars[4]"
+                            android:id="@+id/imageView2Nested"
+                            android:src="@drawable/boim"
+                            android:layout_marginTop="64dp"
+                    />
+                    <ImageView
+                            android:layout_width="256dp"
+                            android:layout_height="256dp" tools:srcCompat="@tools:sample/avatars[11]"
+                            android:id="@+id/imageView3Nested" android:layout_marginTop="64dp"
+                            android:src="@drawable/boxed"
+                    />
+                    <ImageView
+                            android:layout_width="256dp"
+                            android:layout_height="256dp" tools:srcCompat="@tools:sample/avatars[12]"
+                            android:id="@+id/imageView4Nested" android:layout_marginTop="64dp" android:layout_marginBottom="64dp"
+                            android:src="@drawable/chander"
+                    />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="256dp" tools:srcCompat="@tools:sample/avatars[2]"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/anna"
+                    android:layout_marginTop="64dp"
+            />
+            <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="256dp" tools:srcCompat="@tools:sample/avatars[4]"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/boim"
+                    android:layout_marginTop="64dp"
+            />
+            <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="256dp" tools:srcCompat="@tools:sample/avatars[11]"
+                    android:id="@+id/imageView3" android:layout_marginTop="64dp"
+                    android:src="@drawable/boxed"
+            />
+            <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="256dp" tools:srcCompat="@tools:sample/avatars[12]"
+                    android:id="@+id/imageView4" android:layout_marginTop="64dp" android:layout_marginBottom="64dp"
+                    android:src="@drawable/chander"
+            />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

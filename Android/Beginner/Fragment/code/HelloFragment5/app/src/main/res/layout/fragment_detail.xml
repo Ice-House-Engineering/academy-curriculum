@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:text="Bitcoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/nameTextView"/>
+    <TextView
+            android:text="https://bitcoin.org"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/urlTextView"/>
+    <TextView
+            android:text="2009"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/createdOnTextView"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Gender sentence</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@PERSON@ standing there.</string>
+		<key>PERSON</key>
+		<dict>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringGenderRuleType</string>
+			<key>0</key>
+			<string>He is</string>
+			<key>1</key>
+			<string>She is</string>
+			<key>2</key>
+			<string>They are</string>
+		</dict>
+	</dict>
+	<key>Book sentence</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>In this room there %#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>are 0 books</string>
+			<key>one</key>
+			<string>is 1 book</string>
+			<key>other</key>
+			<string>are %d books</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

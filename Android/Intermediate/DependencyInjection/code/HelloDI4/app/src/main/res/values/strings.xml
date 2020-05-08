@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HelloDI4</string>
+    <string name="cryptocurrency">Bitcoin</string>
+</resources>

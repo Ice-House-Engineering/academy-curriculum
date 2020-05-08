@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HelloInternationalization4</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="incoming_transfer">Hi, %1$s! Someone just transferred you %2$d dollar.</string>
+    <plurals name="books">
+        <item quantity="one">There is one book in this room.</item>
+        <item quantity="other">There are %d books in this room.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/fragment_d"
+            android:id="@+id/tab_def">
+    <fragment
+            android:id="@+id/fragment_d"
+            android:name="com.example.hellobottomnavigationview1.FragmentD"
+            android:label="Fragment D">
+        <action
+                android:id="@+id/action_d_to_e"
+                app:destination="@id/fragment_e" />
+    </fragment>
+    <fragment
+            android:id="@+id/fragment_e"
+            android:name="com.example.hellobottomnavigationview1.FragmentE"
+            android:label="Fragment E">
+        <action
+                android:id="@+id/action_e_to_f"
+                app:destination="@id/fragment_f" />
+    </fragment>
+    <fragment
+            android:id="@+id/fragment_f"
+            android:name="com.example.hellobottomnavigationview1.FragmentF"
+            android:label="Fragment F">
+    </fragment>
+</navigation>

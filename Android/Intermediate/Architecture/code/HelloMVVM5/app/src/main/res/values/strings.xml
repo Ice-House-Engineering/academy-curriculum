@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloMVVM5</string>
+    <string name="cryptocurrency_name">Cryptocurrency Name</string>
+    <string name="cryptocurrency_title">Cryptocurrency Title</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_validating">There are some errors when validating name and title of cryptocurrency</string>
+</resources>

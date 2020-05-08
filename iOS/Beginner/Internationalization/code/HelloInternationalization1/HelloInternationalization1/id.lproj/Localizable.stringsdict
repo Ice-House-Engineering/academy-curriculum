@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Book sentence</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Di ruangan ini terdapat %#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d buku</string>
+			<key>zero</key>
+			<string>are 0 books</string>
+		</dict>
+	</dict>
+	<key>Gender sentence</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@PERSON@ berdiri di sana.</string>
+		<key>PERSON</key>
+		<dict>
+			<key>0</key>
+			<string>He is</string>
+			<key>1</key>
+			<string>She is</string>
+			<key>2</key>
+			<string>They are</string>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringGenderRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

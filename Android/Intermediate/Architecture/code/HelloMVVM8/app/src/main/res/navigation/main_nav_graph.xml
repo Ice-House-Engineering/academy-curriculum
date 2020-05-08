@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/list"
+    android:id="@+id/main_nav_graph">
+    <fragment
+        android:id="@+id/list"
+        android:name="com.example.hellomvvm8.view.ListFragment"
+        android:label="Cryptocurrencies List">
+        <action
+            android:id="@+id/goToDetailFragment"
+            app:destination="@id/detail"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.example.hellomvvm8.view.DetailFragment"
+        android:label="Cryptocurrency Detail">
+        <argument
+            android:name="parameterFromListFragment"
+            app:argType="string"/>
+    </fragment>
+</navigation>

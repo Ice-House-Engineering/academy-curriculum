@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloControlExercise2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sbO-dO-LYw">
+                                <rect key="frame" x="128.5" y="40" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="P84-nD-s4V"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXU-uB-rDp">
+                                <rect key="frame" x="166.5" y="90" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="53n-Mr-w0H">
+                                <rect key="frame" x="123" y="144" width="129" height="29"/>
+                                <segments>
+                                    <segment title="Stop"/>
+                                    <segment title="Animate"/>
+                                </segments>
+                            </segmentedControl>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-pb-8mG">
+                                <rect key="frame" x="177.5" y="202" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="eL4-wp-ozy"/>
+                                    <constraint firstAttribute="width" constant="20" id="jM4-d5-wk7"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="20" translatesAutoresizingMaskIntoConstraints="NO" id="7ES-Yp-VsA">
+                                <rect key="frame" x="0.0" y="280" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="4fw-QD-9Rp"/>
+                                    <constraint firstAttribute="height" constant="162" id="eOP-RS-o1R"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="572264566.78060901">
+                                    <!--2019-02-19 10:22:46 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIk-ve-oAq">
+                                <rect key="frame" x="156" y="482" width="63" height="30"/>
+                                <state key="normal" title="Get Time"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hM9-yy-xuE">
+                                <rect key="frame" x="166.5" y="541" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sbO-dO-LYw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="718-Gs-fxO"/>
+                            <constraint firstItem="VCr-pb-8mG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8GN-Oo-m6V"/>
+                            <constraint firstItem="sbO-dO-LYw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A3p-Ya-OjF"/>
+                            <constraint firstItem="hM9-yy-xuE" firstAttribute="top" secondItem="OIk-ve-oAq" secondAttribute="bottom" constant="29" id="A5D-1b-hQ1"/>
+                            <constraint firstItem="aXU-uB-rDp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B2g-2A-6Yg"/>
+                            <constraint firstItem="OIk-ve-oAq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CVe-19-nYj"/>
+                            <constraint firstItem="7ES-Yp-VsA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NpB-53-cB6"/>
+                            <constraint firstItem="aXU-uB-rDp" firstAttribute="top" secondItem="sbO-dO-LYw" secondAttribute="bottom" constant="20" id="ZDv-w3-uqj"/>
+                            <constraint firstItem="hM9-yy-xuE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bpo-7o-JKy"/>
+                            <constraint firstItem="VCr-pb-8mG" firstAttribute="top" secondItem="53n-Mr-w0H" secondAttribute="bottom" constant="30" id="ens-IA-uPK"/>
+                            <constraint firstItem="VCr-pb-8mG" firstAttribute="firstBaseline" secondItem="53n-Mr-w0H" secondAttribute="baseline" constant="10.5" symbolType="layoutAnchor" id="epG-cz-V4p"/>
+                            <constraint firstItem="OIk-ve-oAq" firstAttribute="top" secondItem="7ES-Yp-VsA" secondAttribute="bottom" constant="40" id="iV5-Ux-zKX"/>
+                            <constraint firstItem="53n-Mr-w0H" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mtP-Ea-L2F"/>
+                            <constraint firstItem="7ES-Yp-VsA" firstAttribute="top" secondItem="VCr-pb-8mG" secondAttribute="bottom" constant="58" id="s0p-wI-krU"/>
+                            <constraint firstItem="53n-Mr-w0H" firstAttribute="top" secondItem="aXU-uB-rDp" secondAttribute="bottom" constant="33" id="vWG-Cd-FYG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
