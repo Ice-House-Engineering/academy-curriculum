@@ -7,7 +7,7 @@ Create a new empty Activity Android application. Name it HelloActionMode1.
    
 
 Edit app / res / layout / activity_main.xml. Add two buttons. The first button will launch the action mode. The second button will invalidate action mode.  
-  
+  ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <androidx.constraintlayout.widget.ConstraintLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,7 +32,7 @@ Edit app / res / layout / activity_main.xml. Add two buttons. The first button w
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-  
+  ```
 Add three drawable files in app / res / drawable. Name them: ic_call_received_white.xml, ic_fiber_new_white.xml, ic_transfer_within_a_station_white.xml.  
   
 Edit app / res / values / strings.xml.  
