@@ -67,3 +67,103 @@ Create a menu layout resource, app / res / menu / actions.xml. This menu layout 
     </menu>
   
 Create a menu layout resource, app / res / menu / actions_invalidate.xml. This menu layout will be your menu in Action Mode after invalidating action mode. Invalidating is similar to refreshing.  
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+                android:id="@+id/loginAction"
+                android:icon="@drawable/ic_transfer_within_a_station_white"
+                app:showAsAction="ifRoom"
+                android:title="@string/login_action"/>
+    </menu> 
+  
+Edit app / java / com.example.helloactionmode1 / MainActivity.  
+  
+    package com.example.helloactionmode1
+
+    import androidx.appcompat.app.AppCompatActivity
+    import android.os.Bundle
+    import android.util.Log
+    import android.view.Menu
+    import android.view.MenuItem
+    import android.widget.Button
+    import androidx.appcompat.view.ActionMode
+
+    const val tag = "action-mode-tag"
+
+
+    class MainActivity : AppCompatActivity(), ActionMode.Callback {
+
+        private lateinit var actionMode : ActionMode
+        private var beginningActionMode = true
+
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_main)
+
+            findViewById<Button>(R.id.button).setOnClickListener {
+                actionMode = startSupportActionMode(this)!!
+            }
+
+            findViewById<Button>(R.id.buttonInvalidate).setOnClickListener {
+                beginningActionMode = false
+                actionMode.invalidate()
+            }
+        }
+
+        override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
+            when (item!!.itemId) {
+                R.id.newAction -> Log.d(tag, "New Action")
+                R.id.downloadAction -> actionMode.finish()
+                R.id.loginAction -> Log.d(tag, "Login Action")
+            }
+            return true
+        }
+
+        override fun onCreateActionMode(mode: ActionMode?, menu: Menu?): Boolean {
+            menuInflater.inflate(R.menu.actions, menu)
+            mode!!.title = "Title of ActionMode"
+            return true
+        }
+
+        override fun onDestroyActionMode(mode: ActionMode?) {
+            Log.d(tag, "Shutting down Action Mode")
+        }
+
+        override fun onPrepareActionMode(mode: ActionMode?, menu: Menu?): Boolean {
+            if (beginningActionMode) {
+                return false
+            }
+            menu?.clear()
+            menuInflater.inflate(R.menu.actions_invalidate, menu)
+            mode!!.title = "ActionMode after Invalidation"
+            beginningActionMode = true
+            return true
+        }
+    }
+  
+To start the action mode, we can use startSupportActionMode which accepts ActionMode.Callback. We save the result of this method in ActionMode instance.  
+  
+    actionMode = startSupportActionMode(this)!!
+  
+There is another similar method, named startActionMode. Since we use AppCompatActivity, we need to use startSupportActionMode instead of startActionMode.  
+  
+The ActionMode needs to be imported from androidx.appcompat.view.ActionMode, not android.view.ActionMode.  
+  
+To invalidate the action mode (meaning you want to change the menu in action mode on the fly), you can use invalidate method.  
+  
+    actionMode.invalidate()
+  
+Then we need to make MainActivity to implement ActionMode.Callback. You have to implement 4 methods: onActionItemClicked, onCreateActionMode, onDestroyActionMode, onPrepareActionMode.  
+  
+The first method needs to be implemented is onActionItemClicked.  
+  
+    override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
+        when (item!!.itemId) {
+            R.id.newAction -> Log.d(tag, "New Action")
+            R.id.downloadAction -> actionMode.finish()
+            R.id.loginAction -> Log.d(tag, "Login Action")
+        }
+        return true
+    }
