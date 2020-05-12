@@ -82,7 +82,7 @@ Create a menu layout resource, app / res / menu / actions_invalidate.xml. This m
  ``` 
 Edit app / java / com.example.helloactionmode1 / MainActivity.  
   
-```java
+```javascript
 package com.example.helloactionmode1
 
 import androidx.appcompat.app.AppCompatActivity
@@ -92,8 +92,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.view.ActionMode
-```
-```java
+
 const val tag = "action-mode-tag"
 
 
@@ -148,7 +147,7 @@ class MainActivity : AppCompatActivity(), ActionMode.Callback {
 }
 ```  
 To start the action mode, we can use startSupportActionMode which accepts ActionMode.Callback. We save the result of this method in ActionMode instance.  
-```java
+```javascript
 actionMode = startSupportActionMode(this)!!
 ```
   
@@ -157,13 +156,13 @@ There is another similar method, named startActionMode. Since we use AppCompatAc
 The ActionMode needs to be imported from androidx.appcompat.view.ActionMode, not android.view.ActionMode.  
   
 To invalidate the action mode (meaning you want to change the menu in action mode on the fly), you can use invalidate method.  
-```java
+```javascript
 actionMode.invalidate()
 ```
 Then we need to make MainActivity to implement ActionMode.Callback. You have to implement 4 methods: onActionItemClicked, onCreateActionMode, onDestroyActionMode, onPrepareActionMode.  
   
 The first method needs to be implemented is onActionItemClicked.  
-```java
+```javascript
 override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
     when (item!!.itemId) {
         R.id.newAction -> Log.d(tag, "New Action")
@@ -179,7 +178,7 @@ If we click downloadAction menu item, we will shutdown action mode with finish m
   
 The second method needs to be implemented is onCreateActionMode.  
   
-```java
+```javascript
 override fun onCreateActionMode(mode: ActionMode?, menu: Menu?): Boolean {
     menuInflater.inflate(R.menu.actions, menu)
     mode!!.title = "Title of ActionMode"
@@ -190,8 +189,8 @@ This method is called when the action mode starts. This is when you set up the m
 
 The third method needs to be implemented is onDestroyActionMode.  
   
- ```java
- override fun onDestroyActionMode(mode: ActionMode?) {
+ ```javascript
+override fun onDestroyActionMode(mode: ActionMode?) {
     Log.d(tag, "Shutting down Action Mode")
 }
  ``` 
@@ -200,7 +199,7 @@ This method is called when we shut down the action mode.
 
 The fourth method needs to be implemented is onPrepareActionMode.  
 
-```java
+```javascript
 override fun onPrepareActionMode(mode: ActionMode?, menu: Menu?): Boolean {
     if (beginningActionMode) {
         return false
@@ -336,8 +335,8 @@ Create a menu layout resource, app / res / menu / actions.xml. This menu layout 
 </menu>
 ```
 Edit app / java / com.example.helloactionmode2 / MainActivity
-```java
-ackage com.example.helloactionmode2
+```javascript
+package com.example.helloactionmode2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -347,8 +346,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.view.ActionMode
 import androidx.appcompat.widget.Toolbar
-```
-```java
+
 const val tag = "action-mode-tag"
 
 class MainActivity : AppCompatActivity(), ActionMode.Callback {
@@ -398,7 +396,7 @@ Run the application. Click the button to launch action mode.
   
   
 # Optional Reading
-(https://developer.android.com/guide/topics/ui/menus)  
+https://developer.android.com/guide/topics/ui/menus  
   
 
 # Exercises
