@@ -215,10 +215,13 @@ This method is being used when you want to modify the action mode using invalida
 You clear the menu and inflate a different menu. You also changed the title of the action bar.  
   
 Run the application. Click “Launch Action Mode” button to get Action Mode active. The click “Invalidate Action Mode” to change the menu in Action Mode. If we click download menu item, or back button, the action mode will shut down. We’ll get back our own original actionbar.  
-  
-![HelloActionMode1](../Assets/ActionMode-HelloActionMode1.png)
-![HelloActionMode1-Title](../Assets/ActionMode-HelloActionMode1-Title.png)
-![HelloActionMode1-AfterInvalidation](../Assets/ActionMode-HelloActionMode1-AfterInvalidation.png)
+
+<p align="center">
+<img src="../Assets/ActionMode-HelloActionMode1.png">
+<img src="../Assets/ActionMode-HelloActionMode1-Title.png">
+<img src="../Assets/ActionMode-HelloActionMode1-AfterInvalidation.png">
+</p>
+
 
 # ActionMode with Toolbar
 We can also use action mode with toolbar. We can also change the background of the toolbar in action mode.  
@@ -390,8 +393,10 @@ Here, we use startActionMode method of toolbar instance. Previously we use  star
   
 Run the application. Click the button to launch action mode. 
 
-<img align="center" src="../Assets/ActionMode-HelloActionMode2.png">
-<img align="center" src="../Assets/ActionMode-HelloActionMode2-Title.png"> 
+<p align="center">
+<img src="../Assets/ActionMode-HelloActionMode2.png">
+<img src="../Assets/ActionMode-HelloActionMode2-Title.png"> 
+<p>
  
 # Optional Reading
 https://developer.android.com/guide/topics/ui/menus  
