@@ -388,12 +388,11 @@ class MainActivity : AppCompatActivity(), ActionMode.Callback {
 ```
 Here, we use startActionMode method of toolbar instance. Previously we use  startSupportActionMode method of an activity instance. Also, our ActionMode is imported from android.view.ActionMode, not androidx.appcompat.view.ActionMode.  
   
-Run the application. Click the button to launch action mode.  
-  
-![HelloActionMode2](../Assets/ActionMode-HelloActionMode2.png)
-![HelloActionMode2-Title](../Assets/ActionMode-HelloActionMode2-Title.png)
-  
-  
+Run the application. Click the button to launch action mode. 
+
+<img align="center" src="../Assets/ActionMode-HelloActionMode2.png">
+<img align="center" src="../Assets/ActionMode-HelloActionMode2-Title.png"> 
+ 
 # Optional Reading
 https://developer.android.com/guide/topics/ui/menus  
   
