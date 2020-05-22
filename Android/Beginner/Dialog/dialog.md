@@ -713,7 +713,7 @@ https://developer.android.com/reference/kotlin/android/app/Dialog?hl=en
 
 1. Create a custom dialog like this screenshot.
 <p align="center">
-<img src="../Assets/Dialog-Exercise-5.png">
+<img src="../Assets/Dialog-Exercise.png">
 </p>
 
 
