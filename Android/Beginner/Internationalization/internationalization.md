@@ -253,7 +253,7 @@ Then click “Set” button.
 Run the application again using English language.
 
 <p align="center">
-<img src="../Assets/Internationalization-CustomLocale-2.jpg">
+<img src="../Assets/Internationalization-CustomLocale-2.png">
 </p>
 
 Then we can see the problem. Our fixed width constraint makes our text split in 3 lines. Whether that is okay or not, it depends on our need. But at least, with pseudolanguages we can be aware of such things.
