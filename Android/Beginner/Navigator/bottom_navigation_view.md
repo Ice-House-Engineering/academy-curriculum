@@ -17,7 +17,7 @@ implementation "androidx.navigation:navigation-ui-ktx:2.0.0"
 ```
 Create a new resource directory, app / res / menu. Create a new menu resource: menu_bottom_nav.xml inside that directory.
 
-``xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/tab_abc" android:title="@string/play" android:icon="@android:drawable/ic_media_play"/>
