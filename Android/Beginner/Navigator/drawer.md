@@ -446,5 +446,5 @@ https://developer.android.com/guide/navigation/navigation-ui
 1. Create a drawer like Moon+ Reader has. The drawer has bottom navigation view.
 
 <p align="center">
-<img src="../Assets/Navigator-Drawer-Exercise.png">
+<img src="../Assets/Navigator-Drawer-Exercise.jpg">
 </p>
