@@ -422,7 +422,7 @@ With instrumented test, you can access Android framework.
 
 Edit build.gradle (Module: app).
 
-Change androidTestImplementation from ‘androidx.test:runner:1.2.0’ to ‘androidx.test.ext:junit:1.1.1’.
+Change androidTestImplementation from `‘androidx.test:runner:1.2.0’` to `‘androidx.test.ext:junit:1.1.1’`.
 
 androidTestImplementation 'androidx.test.ext:junit:1.1.1'
 androidTestImplementation 'androidx.test:rules:1.2.0'
