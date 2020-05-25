@@ -187,7 +187,7 @@ Add same pictures of the previous project to drawable directory: ic_call_receive
 
 Edit app / java / com.example.hellotoolbar2 / MainActivity.
 
-```xml
+```kotlin
 package com.example.hellotoolbar2
 
 import androidx.appcompat.app.AppCompatActivity
