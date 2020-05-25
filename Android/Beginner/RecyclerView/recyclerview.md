@@ -154,7 +154,7 @@ Run the application and you will get this application.
 ### Clicking Event
 
 To add clicking event, you implement View.OnClickListener in the view holder. Then you call onClickListener method of the row’s layout view. Finally you implement onClick method in the view holder’s class.
-
+```kotlin
 package com.example.hellorecyclerview1
 
 import android.util.Log
@@ -184,7 +184,7 @@ class CryptoViewHolder(private val view : View) : RecyclerView.ViewHolder(view),
         Log.d("recyclerview clicked event", this.textView.text.toString())
     }
 }
-
+```
 ## GridView
 
 Let’s use another layout manager for recyclerview. Create another empty Android project.
