@@ -199,11 +199,11 @@ The “Bitcoin” string will be sent to “doInBackground” method.
 If we run the application, we would get this output.
 
 <p align="center">
-<img src="../Assets/Concurrency-Async-HelloAsynchronous1png">
+<img src="../Assets/Concurrency-Async-HelloAsynchronous1.png">
 </p>
 
 <p align="center">
-<img src="../Assets/Concurrency-Async-HelloAsynchronous1-2png">
+<img src="../Assets/Concurrency-Async-HelloAsynchronous1-2.png">
 </p>
 
 This is the output in LogCat:
