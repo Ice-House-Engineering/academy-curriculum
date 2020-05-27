@@ -472,6 +472,6 @@ https://developer.apple.com/documentation/uikit/uiscrollview
 
 1. Create a horizontal scroll view like this. These screenshots are from Nike Training app.
 <p align="center">
-<img src="../Assets/ScrollView-Exercise1.png">
-<img src="../Assets/ScrollView-Exercise2.png">
+<img src="../Assets/ScrollView-Exercise1.jpg">
+<img src="../Assets/ScrollView-Exercise2.jpg">
 </p>
