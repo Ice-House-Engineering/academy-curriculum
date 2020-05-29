@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloDialog2</string>
+    <string name="dialog_message">This is the message of the dialog</string>
+    <string name="dialog_title">This is the title of the dialog</string>
+    <string name="positive_button_message">Okay</string>
+    <string name="negative_button_message">Cancel</string>
+</resources>

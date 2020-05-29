@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloButtonStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shU-yy-VI8">
+                                <rect key="frame" x="163" y="46" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="J3C-zF-oxM"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyD-sT-9Yx">
+                                <rect key="frame" x="164.5" y="98" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MNl-RB-6iE"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuK-IJ-Mwh">
+                                <rect key="frame" x="27.5" y="154" width="320" height="216"/>
+                            </pickerView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="XaX-64-Wt2">
+                                <rect key="frame" x="0.0" y="400" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="AVY-p3-mHo"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uuK-IJ-Mwh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6Pc-Oe-xQ6"/>
+                            <constraint firstItem="yyD-sT-9Yx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6Pj-O2-ZJG"/>
+                            <constraint firstItem="shU-yy-VI8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="6qc-Rj-nKh"/>
+                            <constraint firstItem="uuK-IJ-Mwh" firstAttribute="top" secondItem="yyD-sT-9Yx" secondAttribute="bottom" constant="26" id="93L-dg-ceQ"/>
+                            <constraint firstItem="shU-yy-VI8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FSI-TI-FtR"/>
+                            <constraint firstItem="XaX-64-Wt2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IBZ-Hb-a2K"/>
+                            <constraint firstItem="XaX-64-Wt2" firstAttribute="top" secondItem="uuK-IJ-Mwh" secondAttribute="bottom" constant="30" id="Lze-ru-HaJ"/>
+                            <constraint firstItem="yyD-sT-9Yx" firstAttribute="top" secondItem="shU-yy-VI8" secondAttribute="bottom" constant="21" id="dsj-C1-4ht"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="yyD-sT-9Yx" id="HeM-8Z-vm4"/>
+                        <outlet property="pickerView" destination="uuK-IJ-Mwh" id="JYG-bw-ygn"/>
+                        <outlet property="searchBar" destination="XaX-64-Wt2" id="UA7-cY-n8K"/>
+                        <outlet property="switchControl" destination="shU-yy-VI8" id="r0y-bB-B20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

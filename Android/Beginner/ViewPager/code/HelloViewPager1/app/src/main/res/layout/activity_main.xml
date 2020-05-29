@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.viewpager.widget.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.viewpager.widget.PagerTabStrip android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_gravity="top">
+    </androidx.viewpager.widget.PagerTabStrip>
+</androidx.viewpager.widget.ViewPager>

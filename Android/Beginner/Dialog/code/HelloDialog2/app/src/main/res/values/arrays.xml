@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dialog_options">
+        <item>Bitcoin</item>
+        <item>Ethereum</item>
+        <item>Bitcoin Cash</item>
+        <item>Litecoin</item>
+    </array>
+</resources>

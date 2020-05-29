@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cryptocurrencies">
+        <item>Bitcoin</item>
+        <item>Ethereum</item>
+        <item>Ripple</item>
+        <item>Litecoin</item>
+        <item>Bitcoin Cash</item>
+    </string-array>
+</resources>

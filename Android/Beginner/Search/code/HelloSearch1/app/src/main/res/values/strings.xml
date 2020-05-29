@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HelloSearch1</string>
+    <string name="search_hint">This is search hint</string>
+</resources>
