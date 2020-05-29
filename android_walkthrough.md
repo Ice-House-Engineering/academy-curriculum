@@ -64,7 +64,7 @@ Intermediate
 ===================
 
 Usually
-=======
+-------
 Gson (https://github.com/google/gson)  
 Koin (https://insert-koin.io). 
 Glide (https://bumptech.github.io/glide)  
@@ -74,7 +74,7 @@ Retrofit (https://square.github.io/retrofit)
 Realm (https://realm.io)  
 
 Sometimes
-=========
+---------
 Chuck (https://github.com/jgilfelt/chuck) 
 Stetho (https://facebook.github.com/stetho) 
 Autodispose (https://github.com/uber/AutoDispose) 
