@@ -1,8 +1,17 @@
-# Icehouse Curriculum
+# Ice House Acadmecy Curriculum
 
-Welcome to the Icehouse Academy's curriculum repository! 
+Welcome to the Ice House Academy's curriculum repository! 
 
-This repo contains beginner and intermediate lessons for learning Android and iOS development. Each platform consists of lessons that contain a .md file walking through lesson, along with additional reading and exercises to try on your own. Additionally, there is a code folder that contains the source code for each lesson. We encourage you to write the code on your own first, and reference the finished code if you get stuck or to check your work. 
+This repo contains beginner and intermediate lessons for learning Android and iOS development. Each lesson contains a markdown file containing an introduction to the topic, guided coding lessons, and additional reading and exercises to try on your own. Additionally, there is a code folder that contains the source code for each lesson. We encourage you to try writing the code on your own first, and reference the finished code if you get stuck.
+
+### Repository structure
+- Android
+  - Beginner: Learning modules for someone looking to learn the basics of Android development.
+  - Intermediate: More advanced learning modules for those who already know the basics.
+- iOS
+  - Beginner: Learning modules for someone looking to learn the basics of iOS development.
+  - Intermediate: More advanced learning modules for those who already know the basics.
+- Common: Small learning modules that are not specific to Android or iOS
 
 Please view [android_walkthrough.md](https://github.com/Ice-House-Engineering/academy-curriculum/blob/master/android_walkthrough.md) and [ios_walkthrough.md](https://github.com/Ice-House-Engineering/academy-curriculum/blob/master/ios_walkthrough.md) files for a list of topics and libraries covered in each platform.
 
