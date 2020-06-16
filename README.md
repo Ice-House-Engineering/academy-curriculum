@@ -1,4 +1,4 @@
-# Ice House Acadmecy Curriculum
+# Ice House Academy Curriculum
 
 Welcome to the Ice House Academy's curriculum repository! 
 
